@@ -1,6 +1,6 @@
 # 🛡️ SecurePilot Security Scan
 
-**Scan your code for 140+ security vulnerabilities on every pull request — including AI/LLM-specific risks like prompt injection.**
+**Scan your code for 165+ security vulnerabilities on every pull request — including AI/LLM-specific risks like prompt injection.**
 
 [![GitHub Marketplace](https://img.shields.io/badge/GitHub-Marketplace-blue?logo=github)](https://github.com/marketplace/actions/securepilot-security-scan)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -11,7 +11,7 @@
 
 SecurePilot runs on every PR and automatically:
 
-- 🔍 **Scans every changed file** for 140+ security vulnerabilities
+- 🔍 **Scans every changed file** for 165+ security vulnerabilities
 - 📊 **Posts a score (0–100)** directly in the PR comment — visible to the whole team
 - 🤖 **Detects AI-era risks** — prompt injection, LLM output trust, unsafe eval patterns
 - 📋 **Uploads SARIF** to GitHub Code Scanning — findings appear inline in "Files Changed"
@@ -133,7 +133,7 @@ That's it. Push a PR and see the results.
 
 ---
 
-## Rule Coverage (140+ Rules)
+## Rule Coverage (165+ Rules)
 
 | Category | Examples |
 |----------|---------|

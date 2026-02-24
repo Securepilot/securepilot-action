@@ -80,7 +80,7 @@ export function buildPrComment(result: AggregatedResult): string {
     }
   }
 
-  body += `<sub>Powered by [SecurePilot](${SITE_URL}) · 140+ security rules including AI/LLM-specific checks · [Free scan](${SITE_URL})</sub>`;
+  body += `<sub>Powered by [SecurePilot](${SITE_URL}) · 165+ security rules including AI/LLM-specific checks · [Free scan](${SITE_URL})</sub>`;
 
   return body;
 }
