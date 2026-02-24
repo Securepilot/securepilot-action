@@ -1,0 +1,22 @@
+{
+  "name": "securepilot-action",
+  "version": "1.0.0",
+  "description": "SecurePilot GitHub Action — security scanner for AI-generated code",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist --source-map --license licenses.txt",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@vercel/ncc": "^0.38.1",
+    "typescript": "^5.3.3"
+  },
+  "keywords": ["github-action", "security", "scanner", "ai-code", "vibe-coding"],
+  "license": "MIT"
+}

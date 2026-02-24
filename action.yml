@@ -1,0 +1,45 @@
+name: 'SecurePilot Security Scan'
+description: 'Scan your code for 140+ security vulnerabilities — including AI/LLM-specific risks like prompt injection. Posts results directly to PRs.'
+author: 'SecurePilot'
+
+branding:
+  icon: 'shield'
+  color: 'blue'
+
+inputs:
+  path:
+    description: 'Directory to scan (default: repo root)'
+    required: false
+    default: '.'
+  fail-on-severity:
+    description: 'Fail the workflow if findings at this severity or above are found. Options: critical, high, medium, none'
+    required: false
+    default: 'critical'
+  token:
+    description: 'GitHub token used to post PR comments. Defaults to the built-in GITHUB_TOKEN.'
+    required: false
+    default: ${{ github.token }}
+  post-pr-comment:
+    description: 'Whether to post a summary comment on pull requests'
+    required: false
+    default: 'true'
+  upload-sarif:
+    description: 'Whether to upload SARIF results to GitHub Code Scanning'
+    required: false
+    default: 'true'
+
+outputs:
+  score:
+    description: 'Overall security score (0–100)'
+  critical-count:
+    description: 'Number of critical findings'
+  high-count:
+    description: 'Number of high findings'
+  total-findings:
+    description: 'Total number of findings across all severities'
+  sarif-file:
+    description: 'Path to the generated SARIF report file'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
