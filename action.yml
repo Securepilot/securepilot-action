@@ -1,5 +1,5 @@
 name: 'SecurePilot Security Scan'
-description: 'Scan your code for 165+ security vulnerabilities — including AI/LLM-specific risks like prompt injection. Posts results directly to PRs.'
+description: 'Scan your code for 165+ vulnerabilities — prompt injection, AI/LLM risks, secrets & more. Posts score + findings to PRs.'
 author: 'SecurePilot'
 
 branding:
